@@ -1,0 +1,10 @@
+#Написать программу, которая получает два
+# целых числа A и B (0 < A < B) и выводит все
+# натуральные числа в интервале от A до B.
+
+a = int(input("Enter integer A: "))
+b = int(input("Enter integer B: "))
+while (a > 0) and (b > a):
+    while a <= b:
+        print(a)
+        a += 1
