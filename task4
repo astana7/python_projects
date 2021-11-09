@@ -1,0 +1,22 @@
+#Доработать программу «Угадай число» так, чтобы она не заканчивалась,
+# то есть, чтобы после угадывания одного числа, начиналось угадывание следующего.
+# Увеличить диапазон с 7 до 15 и ввести ограничение на количество попыток (например, 3 попытки).
+# Если пользователь не справился за 3 попытки, вывести «GAME OVER».
+import random
+while True:
+    a=random.randint(1,15)
+    print("Guess the number between 1 and 15: ")
+    k=0
+    while True:
+        k=k+1
+        if k>3:
+            print("GAME OVER")
+            break
+        b=int(input())
+        if b==a:
+            print("Congrats!")
+            break
+        elif b<a:
+            print("bigger!")
+        else:
+            print("smaller!")
