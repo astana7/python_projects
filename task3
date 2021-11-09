@@ -1,0 +1,19 @@
+#С помощью бесконечного цикла и оператора break реализовать
+# игру «Угадай число». Программа генерирует случайное число в
+# диапазоне от 1 до 7 и говорит пользователю: «Угадай число от 1 до 7!».
+# В бесконечном цикле программа считывает ответы пользователя и подсказывает
+# ему «больше!» или «меньше!», а в случае правильного ответа цикл завершается,
+# и выводятся сердечные поздравления с победой.
+import random
+a = random.randint(1, 7)
+b = int(input("Guess the number between 1 and 7!: "))
+while True:
+    while b > a:
+        print("smaller!")
+        b = int(input("Guess the number between 1 and 7!: "))
+    while a > b:
+        print("bigger!")
+        b = int(input("Guess the number between 1 and 7!: "))
+    else:
+        print("Congrats!")
+        break
