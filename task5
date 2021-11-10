@@ -1,0 +1,8 @@
+#Написать программу, которая получает два целых числа 
+# A и B (0 < A < B) и выводит квадраты всех натуральных чисел в интервале от A до B.
+a = int(input("Enter number A: "))
+b = int(input("Enter number B: "))
+while (a > 0) and (b > a):
+    while a <= b:
+        print(a, "--->",a**2)
+        a += 1
